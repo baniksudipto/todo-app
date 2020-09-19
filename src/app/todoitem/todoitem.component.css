@@ -29,10 +29,10 @@
 
 .buttons {
   position: absolute;
-  width: 30px;
+  width: 50px;
   right: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
@@ -63,7 +63,7 @@
   text-decoration: line-through;
 }
 .todo-text{
-  width: calc(100% - 30px);
+  width: calc(100% - 50px);
 }
 
 .done {
