@@ -1,5 +1,13 @@
-.top-padding-20 {
+.header {
   padding-top: 20px;
+}
+.input_box{
+  position: sticky;
+  top: 0;
+  padding: 10px 20px 0;
+  z-index: 9;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .todo-container {
