@@ -1,20 +1,24 @@
-<div class="container top-padding-20">
+<div class="container header">
   <div class="row">
     <h4>Task List</h4>
   </div>
+</div>
+<div class="container input_box">
   <div class="row type-and-add">
     <input (keydown.enter)="addTodo()" [(ngModel)]="inputText" placeholder="add your task">
-    <button  class="button button-outline" (click)="addTodo()">Add</button>
+    <button class="button button-outline" (click)="addTodo()">Add</button>
   </div>
-  <div class="row">
+</div>
+<br>
 
-  </div>
-
+<div class="container">
 
   <div class="todo-container">
     <h6>List of Tasks todo</h6>
-    <app-todoitem (changeEvent)="changeTask($event)" *ngFor="let t of todoList;index as i" [index]="i"
-                  [text]="t"></app-todoitem>
+    <app-todoitem *ngFor="let t of todoList;index as i" 
+                  [index]="i"
+                  [text]="t"
+                  (changeEvent)="changeTask($event)"></app-todoitem>
   </div>
 
   <div class="todo-container">
@@ -23,6 +27,4 @@
     </h6>
     <app-todoitem *ngFor="let s of doneItems" [done]="true" [text]="s"></app-todoitem>
   </div>
-
-
 </div>
