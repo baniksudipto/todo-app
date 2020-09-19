@@ -29,12 +29,19 @@
 
 .buttons {
   position: absolute;
-  right: 5px;
+  width: 30px;
+  right: 0;
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .done-button {
   display: inline-flex;
+  width: 23px;
   padding: 0 7px;
   font-weight: bold;
   transition: 0.2s;
@@ -44,15 +51,19 @@
 
 .remove-button {
   display: inline-flex;
+  width: 23px;
   padding: 0 7px;
   font-weight: bold;
   transition: 0.2s;
   cursor: pointer;
-  background-color: antiquewhite;
+  background-color: lightcoral;
 }
 
 .mark-done {
   text-decoration: line-through;
+}
+.todo-text{
+  width: calc(100% - 30px);
 }
 
 .done {
