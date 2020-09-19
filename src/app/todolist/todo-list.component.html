@@ -1,0 +1,28 @@
+<div class="container top-padding-20">
+  <div class="row">
+    <h4>Task List</h4>
+  </div>
+  <div class="row type-and-add">
+    <input (keydown.enter)="addTodo()" [(ngModel)]="inputText" placeholder="add your task">
+    <button  class="button button-outline" (click)="addTodo()">Add</button>
+  </div>
+  <div class="row">
+
+  </div>
+
+
+  <div class="todo-container">
+    <h6>List of Tasks todo</h6>
+    <app-todoitem (changeEvent)="changeTask($event)" *ngFor="let t of todoList;index as i" [index]="i"
+                  [text]="t"></app-todoitem>
+  </div>
+
+  <div class="todo-container">
+    <h6>List of Tasks completed
+      <button (click)="clearDoneItems()" *ngIf="doneItems.length > 0" class="button button-clear">clear</button>
+    </h6>
+    <app-todoitem *ngFor="let s of doneItems" [done]="true" [text]="s"></app-todoitem>
+  </div>
+
+
+</div>

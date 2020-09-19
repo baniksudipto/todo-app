@@ -1,0 +1,16 @@
+.top-padding-20 {
+  padding-top: 20px;
+}
+
+.todo-container {
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: flow-root;
+  padding: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+}
+
+.type-and-add > *{
+  border-radius: 0 !important;
+}

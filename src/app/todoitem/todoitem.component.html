@@ -1,0 +1,9 @@
+<div [ngClass]="{'done': done , 'todo' : !done}" class="row todo-item-wrapper">
+  <div *ngIf="!done" class="buttons">
+    <div (click)="didThis()" class="done-button">done</div>
+    <div (click)="removeThis()" class="remove-button">remove</div>
+  </div>
+  <span [ngClass]="{'mark-done': done}">
+    {{text}}
+  </span>
+</div>
