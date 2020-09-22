@@ -1,9 +1,11 @@
 .todo-item-wrapper {
+  width: inherit;
+  border-radius:3px;
   position: relative;
   padding: 5px;
   margin-top: 5px;
+  margin-left: 0;
   animation: fadeInFromDown 0.1s ease-in;
-  border-radius:3px;
 }
 
 @keyframes fadeInFromDown {
