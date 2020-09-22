@@ -19,8 +19,15 @@
   margin-bottom: 10px;
   border-radius: 3px;
 }
-.todo-container h6{
+.todo-container > h6{
   font-weight:bold; 
+}
+.todo-container > h6 > button {
+    position: absolute;
+    right: 20px;
+    width: fit-content;
+    display: inline;
+    margin-top: -8px; 
 }
 
 .type-and-add > *{
